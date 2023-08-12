@@ -1,0 +1,277 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins'
+}
+.vertical_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    margin: 0.8rem  auto;
+}
+.ri-menu-line{
+    font-size: 26px;
+    cursor: pointer;
+}
+.nav-horizontal>nav{
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: -20px;   
+     writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    margin: auto ; 
+    padding: 1rem;
+}
+.nav-horizontal {
+    display: inline-block;
+    position: relative;
+    padding: 8px;
+    margin: auto 2.5rem;
+}
+.nav-horz a:hover {
+    color: #FE3738;
+}
+
+
+.nav-horz>ul ,
+.vert_nav>ul{
+
+    font-size: 18px;
+    list-style: none;
+}
+.nav-horz>ul>li>a ,
+.vert_nav>ul>li>a{
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+.vert_nav ul li {
+    display: inline-block;
+    position: relative;
+    padding: 8px;
+
+}
+.vert_nav a:hover {
+    font-weight: 600;
+    color: #FE3738;
+}
+.vert_nav ul li:hover:before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    background: #fe3737dc;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    left:calc(50% - 3px);
+    
+}
+.vert_nav{
+    display: flex;
+    gap: 1rem;
+}
+.shop_cart>.ri-shopping-cart-2-fill{
+    cursor: pointer;
+}
+.shop_cart{
+    padding: 5px;
+    font-size: 22px;
+display: flex;;
+justify-content: space-evenly;
+align-items: center;
+gap: 10px;
+}
+.profile_pic{
+    margin-top: 10px;
+    cursor: pointer;
+}
+.profile_pic>img{
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    filter: drop-shadow(1px 5px 5px rgba(0, 0, 0, 0.541));
+
+}
+.vertical_nav>h2{
+color: white;
+font-size: 32px;
+}
+.bg-color{
+background-color:#282828 ;    
+height: 70%;
+width: 30%;
+position: absolute;
+top: 0;
+left: 10%;
+z-index: -1;
+}
+.container_main>img{
+height: 26rem;
+filter: drop-shadow(1px 5px 5px rgba(0, 0, 0, 0.541));
+
+}
+.container_main{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    width: 85vw;
+    justify-content: space-around;
+    margin: auto;
+    position: absolute;
+    top: 12%;
+    left: 10%;
+}
+.text_container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.text_container>p{
+    width: 62%;
+}
+.text_container>h2{
+    color: #282828cb;
+    font-weight: 900;
+    font-size: 60px;
+}
+.button{
+    display: flex;
+    align-items: center;
+    width: 320px;
+    justify-content: space-between;
+}
+.span_cont{
+    display: flex;
+    flex-direction: column;
+    line-height: 16px;
+}
+.amount{
+    color: #FE0000;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.sub{
+    font-size: 10px;
+}
+.button>button{
+    cursor: pointer;
+    background-color: #282828;
+    color: white;
+    height: 50px;
+    border: none;
+    font-size: larger;
+    width: 180px;
+}
+.button>button:hover{
+
+    background-color: #FE3738;
+
+}    
+
+
+
+.slider_container{
+
+    border-radius: 10px;
+    height: 16rem;
+    width: 13rem;
+    background-color: #382E2D;
+box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.541);
+color: white;
+}
+.slider_container>img{
+    width: 140px;
+    height: 140px;
+    transform: translateX(-2rem)
+    translateY(-1rem);
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.541));
+
+}
+.rate{
+    position: absolute;
+    top: 20%;
+    left: 90%;
+}
+.catog{
+display: flex;
+flex-direction: column;
+align-items: start;
+line-height: 20px;
+position: absolute;
+top: 48%;
+left: 30%;
+}
+.catog>h3{
+    font-weight: 500;
+}
+.catog>span{
+    color: #867c7c;
+    font-size: 12px;
+}
+.basket_cont{
+    font-size: 14px;
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    width: 75%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+.basket{
+    display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    background-color: #282828;
+}
+
+.slider{
+    position: absolute;
+    top: 76%;
+    left: 10%;
+}
+
+
+
+/* 
+======================swipper js==================== */
+
+.swiper {
+    width: 85vw;
+    height: 20rem;
+    position: absolute;
+  }
+  
+  .swiper-slide {
+      padding: 1rem 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 7rem;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 140px;
+    height: 140px;
+    
+  }
+  
+  
+  
+  
